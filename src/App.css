@@ -1,0 +1,49 @@
+
+body {
+  --sb-track-color: #dee6ea;
+  --sb-thumb-color: #679bf3;
+  --sb-size: 9px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+  
+}
+
+.slick-dots {
+  position: absolute !important;
+  bottom: -40px !important;
+}
+/* Custom styles for Slick Slider dots */
+.slick-dots li button:before {
+  color: rgba(78, 78, 78, 0.737) !important;
+  font-size: 9px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(67, 165, 250) !important; /* Ensure active dot is also white */
+}
+
+.slick-prev:before, .slick-next:before {
+     
+  font-size: 35px !important;
+  color: rgba(179, 184, 188, 0.784);
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
