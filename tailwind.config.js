@@ -11,6 +11,9 @@ module.exports = {
         'custom-gradient': 'linear-gradient(180deg, rgba(150,191,248,1) 19%, rgba(16,106,187,1) 98%)',
         'custom-background': 'linear-gradient(to right, #f7f9fc, #ffffff)'
       },
+      backgroundPosition: {
+        'responsive-left' : 'left'
+      }
     },
   },
   plugins: [],

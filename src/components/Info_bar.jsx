@@ -34,7 +34,7 @@ export default function Info_bar() {
   ]
 
   return (
-    <div className='flex justify-center items-center gap-x-10 h-14'>
+    <div className='hidden lg:flex justify-center items-center gap-x-10 h-14'>
        <ul className='flex gap-x-5'> 
        { infobar_content.map((content,index) => (  
         <li key={index} className='flex items-center gap-x-3 text-xs text-gray-600 hover:text-blue-500 cursor-pointer'><span className='text-[1.1rem]'>{content.icon}</span>{content.text}</li>

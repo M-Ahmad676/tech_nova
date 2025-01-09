@@ -47,3 +47,11 @@ body::-webkit-scrollbar-thumb {
                      var(--sb-track-color);
   }
 }
+
+@media(max-width:1000px){
+    
+  .bg-position-left {
+    background-position: left !important;
+  }
+
+}

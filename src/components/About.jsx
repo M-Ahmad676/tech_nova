@@ -12,17 +12,17 @@ export default function About() {
   return (
     <>
     <div 
-    className='h-[90vh] flex justify-around items-center'
+    className='h-[90vh] flex flex-wrap justify-around items-center bg-responsive-left'
      style={{
         backgroundImage:`url(${background})`,
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center', 
+        backgroundSize: 'cover',  
         backgroundRepeat: 'no-repeat',
         opacity: '0.9',
     }}
     >
        <div
        ref={textContentRef}
+       className='max-w-[50%] w-full pl-16'
        >
         <motion.h2 
         initial={{x:'-100vw', opacity: 0}}
@@ -44,12 +44,12 @@ export default function About() {
 
        </div>
 
-       <div className='flex justify-center'> 
+       <div className='flex justify-center '> 
         <div className='relative'>  
-        <img src={LaptopFrame} alt="LaptopFrame" className='max-w-[34rem]'/>
+        <img src={LaptopFrame} alt="LaptopFrame" className='max-w-[28rem] xl:max-w-[34rem]'/>
 
         <iframe  
-        className='absolute top-[8.3rem] left-[13%] w-[73.9%] h-[47.5%]'
+        className='absolute top-[6.8rem] xl:top-[8.3rem] left-[13%] w-[73.9%] h-[47.5%]'
         width="560" height="315" 
         src="https://www.youtube.com/embed/xcJtL7QggTI?si=Kmzf1XXiKR6hKtCM" 
         title="YouTube video player" frameborder="0"
