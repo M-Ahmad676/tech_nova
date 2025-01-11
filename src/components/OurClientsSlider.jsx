@@ -23,12 +23,37 @@ export default function OurClientsSlider() {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true, 
+        autoplay: true,
         autoplaySpeed: 5000,
-    };
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      };
 
     return (
-        <div className="h-[70vh] flex flex-col justify-center px-36 gap-y-14">
+        <div className="h-[70vh] flex flex-col justify-center max-w-screen-2xl w-full px-10 2xl:px-32 gap-y-14">
             <div>
             <h3 className="text-[2rem] font-semibold">Our Clients</h3>
             <p className='text-gray-600'>trusted by companies and organizations around the world</p>
@@ -41,7 +66,7 @@ export default function OurClientsSlider() {
                             <img
                                 src={company}
                                 alt={`Client ${index + 1}`}
-                                className="w-[10rem] h-auto object-contain"
+                                className=" w-[55%] object-contain"
                             />
                         </div>
                     ))}

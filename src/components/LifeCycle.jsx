@@ -9,7 +9,7 @@ export default function LifeCycle() {
     const inView = useInView(screenRef, {once:true, threshold: 0.2})
 
   return (
-    <div className='flex h-[70vh] justify-around items-center'>
+    <div className='flex h-auto py-16 gap-y-5 lg:gap-y-0 lg:py-0 lg:h-[70vh] justify-around flex-wrap items-center'>
         <div ref={screenRef}>
             <h3 className='text-[2rem] font-semibold'>Software Development Life Cycle</h3>
             <p className='text-gray-600'>We use Agile / Scrum Methodology</p>
@@ -52,7 +52,7 @@ export default function LifeCycle() {
         </div>
 
         <div>
-          <img src={vector} alt="Vector" className='max-w-[30rem]'/>
+          <img src={vector} alt="Vector" className='max-w-[24rem] lg:max-w-[30rem]'/>
         </div>
        
     </div>

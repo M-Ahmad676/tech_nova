@@ -14,10 +14,10 @@ export default function Project_M() {
     ]
 
   return (
-    <div className='h-[75vh] flex justify-around items-center px-16'>
+    <div className='min-h-screen my-20 gap-y-10 lg:h-[75vh] flex flex-wrap-reverse gap-x-10 justify-around items-center px-16 max-w-screen-[1800px] w-full m-auto'>
 
         <div>
-           <img src={MacFrame} alt="appleFrame" className='w-[28rem]' />
+           <img src={MacFrame} alt="appleFrame" className='w-[22rem] md:w-[28rem]' />
         </div>
 
         <div className='space-y-5'>

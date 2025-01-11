@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
     <div 
-    className='h-[90vh] flex flex-wrap justify-around items-center bg-responsive-left'
+    className='flex items-center h-[90vh] bg-responsive-left'
      style={{
         backgroundImage:`url(${background})`,
         backgroundSize: 'cover',  
@@ -20,9 +20,9 @@ export default function About() {
         opacity: '0.9',
     }}
     >
-       <div
+      <div className=' flex flex-wrap justify-around items-center max-w-screen-2xl w-full h-full m-auto'>
+      <div
        ref={textContentRef}
-       className='max-w-[50%] w-full pl-16'
        >
         <motion.h2 
         initial={{x:'-100vw', opacity: 0}}
@@ -44,13 +44,13 @@ export default function About() {
 
        </div>
 
-       <div className='flex justify-center '> 
+       <div className='flex justify-center'> 
         <div className='relative'>  
         <img src={LaptopFrame} alt="LaptopFrame" className='max-w-[28rem] xl:max-w-[34rem]'/>
 
         <iframe  
-        className='absolute top-[6.8rem] xl:top-[8.3rem] left-[13%] w-[73.9%] h-[47.5%]'
-        width="560" height="315" 
+        className='absolute top-[0.9rem] xl:top-[1.2rem] left-[13%] w-[73.9%] h-[80.5%]'
+        width="560" height="615" 
         src="https://www.youtube.com/embed/xcJtL7QggTI?si=Kmzf1XXiKR6hKtCM" 
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -58,6 +58,7 @@ export default function About() {
         allowfullscreen></iframe>
 
        </div>
+        </div>
         </div>
     </div>
     </>

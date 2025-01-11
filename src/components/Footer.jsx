@@ -40,9 +40,9 @@ export default function Footer() {
   ];
 
   return (
-    <div className="h-[80vh] bg-[#131313] flex items-center justify-center">
-      <div className="flex w-full justify-evenly">
-      <div className="max-w-[25rem]">
+    <div className="h-auto py-16 xl:h-[80vh] bg-[#131313] flex items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:flex w-full justify-evenly px-5 gap-y-12">
+      <div className="max-w-[25rem] m-auto xl:m-0">
         <h4 className="text-white text-[1.5rem] font-bold pb-8">ABOUT</h4>
         <p className="text-gray-300 text-sm leading-6">
           Tech House Having 100+ Quality Products and Innovations at national
@@ -50,11 +50,11 @@ export default function Footer() {
         </p>
       </div>
 
-      <div className="max-w-[25rem]">
+      <div className="max-w-[25rem] col-start-1 m-auto xl:m-0">
         <h4 className="text-white text-[1.5rem] font-bold pb-8">
           RECENT POSTS
         </h4>
-        <div className="w-full space-y-10">
+        <div className="w-full space-y-10 ">
           {posts.map((post, index) => (
             <div key={index} className="group">
               <div className="flex items-center gap-x-7">
@@ -79,7 +79,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-[25rem] text-sm">
+      <div className="max-w-[25rem] text-sm m-auto xl:m-0 h-full">
         <h4 className="text-white text-[1.5rem] font-bold pb-8">CONTACTS</h4>
         <ul className="space-y-2">
         {contacts.map((office,index) => (

@@ -5,12 +5,12 @@ import {motion} from 'framer-motion'
 export default function Cover() {
   return (
     <div className='flex justify-center my-14 lg:my-0'>
-     <div className='flex flex-col justify-center gap-y-10 lg:flex-row lg:justify-around items-center h-[92vh] px-5 lg:px-10'>
+     <div className='flex flex-col justify-center gap-y-10 lg:flex-row lg:justify-around items-center h-[92vh] px-5 lg:px-10 max-w-screen-2xl w-full'>
         <div className='text-center lg:text-left lg:pl-16 space-y-2 lg:max-w-[50%] w-full'>
            <motion.h1 
            initial={{ x: '-100vw', opacity: 0 }}
            animate={{ x: 0, opacity: 1 }}
-           transition={{ type: 'spring', stiffness: 230, duration: 1 }}
+           transition={{ type: 'spring', stiffness: 30, duration: 1 }}
            className='text-[3rem] font-bold text-blue-600'>Tech Nova</motion.h1>
            <motion.h4 
             className="text-[1.5rem] font-medium"

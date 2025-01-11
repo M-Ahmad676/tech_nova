@@ -14,7 +14,7 @@ export default function Bottom_bar() {
       ]
 
   return (
-    <div className='bg-black text-gray-400 text-sm flex justify-between px-20 items-center h-[8rem]'>
+    <div className='bg-black text-gray-400 text-sm flex justify-evenly xl:justify-between flex-col-reverse xl:flex-row px-20 items-center h-[8rem]'>
 
         <p className='text-sm'>2020 © CopyRights Tech Nova Software House</p>
 
@@ -26,7 +26,7 @@ export default function Bottom_bar() {
             <li><a href='/' className='hover:text-blue-500'>Banks</a></li>
         </ul>
 
-        <ul className='flex gap-x-5'>
+        <ul className='hidden xl:flex gap-x-5'>
        {
         social_icons.map((icons,index) => (
           <li key={index} className='text-gray-500 text-[1.05rem] cursor-pointer'>{icons}</li>

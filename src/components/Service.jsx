@@ -46,14 +46,14 @@ export default function Service() {
 
 
   return (
-    <div className='h-[90vh] bg-custom-gradient flex justify-evenly items-center'>
+    <div className='min-h-screen py-8 md:py-0 md:h-[90vh] bg-custom-gradient flex flex-wrap md:flex-nowrap justify-evenly gap-x-12 lg:gap-x-0  items-center'>
 
-        <div className='flex flex-col justify-evenly h-full'>   {/* Left Service */}
+        <div className='flex flex-col gap-y-10 md:gap-y-0  justify-evenly h-full'>   {/* Left Service */}
           
           {serviceLeft.map((service, index) => (
             
-            <div className='flex items-center justify-between max-w-[25rem]' key={index}>
-                <div className='text-white max-w-[75%] space-y-2 text-right'>
+            <div className='flex flex-row-reverse md:flex-row items-center justify-between max-w-[25rem]' key={index}>
+                <div className='text-white max-w-[75%] space-y-2 text-left md:text-right'>
                 <h3 className='text-[1.3rem] font-bold'>{service.title}</h3>
                 <p className='text-sm font-medium'>{service.description}</p>
                 </div>
@@ -70,13 +70,13 @@ export default function Service() {
 
         </div>
 
-        <div>  {/* Mobile Frame */}
+        <div className='hidden lg:block'>  {/* Mobile Frame */}
         
         <img src={Phone_Mockup} alt="phone" className='max-w-[15rem]' />
 
         </div>
 
-        <div className='flex flex-col justify-evenly h-full'> {/* Right Services */}
+        <div className='flex flex-col gap-y-10 md:gap-y-0 justify-evenly h-full'> {/* Right Services */}
 
         {serviceRight.map((service, index) => (
             
