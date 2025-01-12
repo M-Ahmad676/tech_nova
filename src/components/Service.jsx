@@ -54,12 +54,12 @@ export default function Service() {
             
             <div className='flex flex-row-reverse md:flex-row items-center justify-between max-w-[25rem]' key={index}>
                 <div className='text-white max-w-[75%] space-y-2 text-left md:text-right'>
-                <h3 className='text-[1.3rem] font-bold'>{service.title}</h3>
+                <h3 className='text-[1.1rem] min-[500px]:text-[1.3rem] font-bold'>{service.title}</h3>
                 <p className='text-sm font-medium'>{service.description}</p>
                 </div>
                 <div className='max-w-[25%]'>
                     <div className='bg-white rounded-full p-2 w-full'>
-                    <img src={service.icon} alt={service.title} className='w-[3.5rem]'/>
+                    <img src={service.icon} alt={service.title} className='w-[2.5rem] min-[500px]:w-[3.5rem]'/>
                     </div>
                 </div>
             </div>
@@ -83,11 +83,11 @@ export default function Service() {
             <div className='flex items-center justify-between max-w-[25rem]' key={index}>
                 <div className='max-w-[25%]'>
                     <div className='bg-white rounded-full p-2 w-full'>
-                    <img src={service.icon} alt={service.title} className='w-[3.5rem]'/>
+                    <img src={service.icon} alt={service.title} className='w-[2.5rem] min-[500px]:w-[3.5rem]'/>
                     </div>
                 </div>
                 <div className='text-white max-w-[75%] space-y-2 text-left'>
-                <h3 className='text-[1.3rem] font-bold'>{service.title}</h3>
+                <h3 className='text-[1.1rem] min-[500px]:text-[1.3rem] font-bold'>{service.title}</h3>
                 <p className='text-sm font-medium'>{service.description}</p>
                 </div>
             </div>

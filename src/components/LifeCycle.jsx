@@ -10,13 +10,13 @@ export default function LifeCycle() {
 
   return (
     <div className='flex h-auto py-16 gap-y-5 lg:gap-y-0 lg:py-0 lg:h-[70vh] justify-around flex-wrap items-center'>
-        <div ref={screenRef}>
-            <h3 className='text-[2rem] font-semibold'>Software Development Life Cycle</h3>
-            <p className='text-gray-600'>We use Agile / Scrum Methodology</p>
+        <div ref={screenRef} className='px-12 sm:px-0'>
+            <h3 className='text-[1.6rem] min-[500px]:text-[2rem] font-semibold'>Software Development Life Cycle</h3>
+            <p className='text-gray-600 text-sm min-[500px]:text-base'>We use Agile / Scrum Methodology</p>
 
             <div className='w-28 h-[0.1rem] bg-blue-300 my-5'></div>
 
-            <ul className='space-y-3 list-disc pl-5 text-gray-700 italic text-[1.1rem] font-semibold'>
+            <ul className='space-y-3 list-disc pl-5 text-gray-700 italic text-base min-[500px]:text-[1.1rem] font-semibold'>
                 <motion.li
                 initial={{x:'-100vw', opacity:0}}
                 animate={inView ? {x:0 , opacity:1} : {}}
@@ -52,7 +52,7 @@ export default function LifeCycle() {
         </div>
 
         <div>
-          <img src={vector} alt="Vector" className='max-w-[24rem] lg:max-w-[30rem]'/>
+          <img src={vector} alt="Vector" className='max-w-[20rem] sm:max-w-[24rem] lg:max-w-[30rem] w-full'/>
         </div>
        
     </div>
