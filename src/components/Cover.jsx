@@ -11,9 +11,9 @@ export default function Cover() {
            initial={{ x: '-100vw', opacity: 0 }}
            animate={{ x: 0, opacity: 1 }}
            transition={{ type: 'spring', stiffness: 30, duration: 1 }}
-           className='text-[3rem] font-bold text-blue-600'>Tech Nova</motion.h1>
+           className='text-[2.3rem] min-[500px]:text-[3rem] font-bold text-blue-600'>Tech Nova</motion.h1>
            <motion.h4 
-            className="text-[1.5rem] font-medium"
+            className="text-[1.3rem] min-[500px]:text-[1.5rem] font-medium"
             initial={{ x: '-100vw', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 30, delay: 0.2 }}
@@ -22,7 +22,7 @@ export default function Cover() {
             initial={{ x: '-100vw', opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 30, delay: 0.4 }}
-           className='leading-7 text-gray-600'>At Tech Nova, we strive to provide cutting-edge solutions that empower businesses to grow and innovate. Our expertise in web development, cloud technologies, and digital transformation drives success in a rapidly evolving tech landscape</motion.p>
+           className=' leading-7 text-gray-600'>At Tech Nova, we strive to provide cutting-edge solutions that empower businesses to grow and innovate. Our expertise in web development, cloud technologies, and digital transformation drives success in a rapidly evolving tech landscape</motion.p>
         </div>
         <div className='flex justify-center items-end lg:max-w-[50%] w-full'>
          <motion.img 

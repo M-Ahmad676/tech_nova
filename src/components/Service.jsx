@@ -46,9 +46,9 @@ export default function Service() {
 
 
   return (
-    <div className='min-h-screen py-8 md:py-0 md:h-[90vh] bg-custom-gradient flex flex-wrap md:flex-nowrap justify-evenly gap-x-12 lg:gap-x-0  items-center'>
+    <div className='min-h-screen py-8 md:py-0 md:h-[90vh] bg-custom-gradient flex flex-wrap md:flex-nowrap justify-evenly w-full gap-x-12 lg:gap-x-0  items-center'>
 
-        <div className='flex flex-col gap-y-10 md:gap-y-0  justify-evenly h-full'>   {/* Left Service */}
+        <div className='flex flex-col px-2 min-[500px]:px-0 gap-y-10 md:gap-y-0 justify-evenly items-center h-full w-full'>   {/* Left Service */}
           
           {serviceLeft.map((service, index) => (
             
@@ -76,7 +76,7 @@ export default function Service() {
 
         </div>
 
-        <div className='flex flex-col gap-y-10 md:gap-y-0 justify-evenly h-full'> {/* Right Services */}
+        <div className='flex px-2 min-[500px]:px-0 flex-col gap-y-10 md:gap-y-0 justify-evenly items-center  h-full w-full'> {/* Right Services */}
 
         {serviceRight.map((service, index) => (
             

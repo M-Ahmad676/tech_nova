@@ -23,6 +23,7 @@ body::-webkit-scrollbar-thumb {
 .slick-dots {
   position: absolute !important;
   bottom: -50px !important;
+  margin: 0 3px !important;
 }
 /* Custom styles for Slick Slider dots */
 .slick-dots li button:before {
@@ -52,6 +53,14 @@ body::-webkit-scrollbar-thumb {
     
   .bg-position-left {
     background-position: left !important;
+  }
+
+}
+
+@media(max-width:500px){
+
+  .slick-dots li{
+    margin: 0px !important;
   }
 
 }

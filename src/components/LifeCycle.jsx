@@ -16,7 +16,7 @@ export default function LifeCycle() {
 
             <div className='w-28 h-[0.1rem] bg-blue-300 my-5'></div>
 
-            <ul className='space-y-3 list-disc pl-5 text-gray-700 italic text-base min-[500px]:text-[1.1rem] font-semibold'>
+            <ul className='space-y-3 list-disc pl-5 text-gray-700 text-base min-[500px]:text-[1.1rem] font-semibold'>
                 <motion.li
                 initial={{x:'-100vw', opacity:0}}
                 animate={inView ? {x:0 , opacity:1} : {}}

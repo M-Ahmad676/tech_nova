@@ -32,7 +32,7 @@ export default function OurClientsSlider() {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -53,7 +53,7 @@ export default function OurClientsSlider() {
   };
 
   return (
-    <div className="h-[70vh] flex flex-col justify-center max-w-screen-2xl w-full px-10 2xl:px-32 gap-y-14">
+    <div className="h-[70vh] flex flex-col justify-center max-w-screen-2xl m-auto w-full px-10 2xl:px-32 gap-y-14">
       <div>
         <h3 className="text-[1.8rem] sm:text-[2rem] font-semibold">
           Our Clients

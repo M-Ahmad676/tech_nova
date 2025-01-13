@@ -7,7 +7,14 @@ import Logo from "../assets/Logo.png"
 export default function NavBar() {
 
   const [isScrolled, setIsScrolled] = useState(false)
+  const [sideMenu ,setSideMenu] = useState(false)
 
+
+  const handleSideMenu = () => {
+       
+    setSideMenu(!sideMenu)
+
+  }
     
   useEffect(() => {
        
@@ -35,7 +42,16 @@ export default function NavBar() {
   return (
     <div className={`flex justify-between px-4 sm:px-16 xl:px-0 xl:justify-evenly items-center gap-x-10 h-16 bg-black fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'top-0' : 'top-0 lg:top-[3.5rem]'}`}>
 
-      <IoMenu className='text-white text-[2rem] block xl:hidden cursor-pointer hover:text-cyan-400'/> 
+      <IoMenu className='text-white text-[2rem] block xl:hidden cursor-pointer hover:text-cyan-400' onClick={handleSideMenu}/> 
+
+      <div className={`absolute bg-[#171717] min-h-screen w-[15rem] md:w-[19rem] h-full top-16 left-0 transition-all duration-300 ${sideMenu ? 'translate-x-0' : '-translate-x-full'}`}>
+      <ul className='py-10 text-white text-[1.1rem]'>
+        {Links.map((link,index) => (
+        <li className='px-4 py-5 hover:bg-black hover:text-blue-400 sm:px-8' key={index}><a href='/' className='font-medium'>{link}</a></li>
+      ))}
+      </ul>
+      </div>  
+
 
       <div className='pl-5 sm:pl-20 xl:pl-0'>
       <img src={Logo} alt="Tech Nova" className=' w-[12rem] sm:w-[14rem] xl:w-[15rem] cursor-pointer'/>
