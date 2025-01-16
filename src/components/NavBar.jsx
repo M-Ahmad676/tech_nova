@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { IoSearch } from "react-icons/io5";
 import { MdAccountCircle } from "react-icons/md"
 import { IoMenu } from "react-icons/io5"
-import Logo from "../assets/Logo.png"
+import Logo from "../assets/Tech Nova.png"
 
 export default function NavBar() {
 
@@ -54,20 +54,18 @@ export default function NavBar() {
 
 
       <div className='pl-5 sm:pl-20 xl:pl-0'>
-      <img src={Logo} alt="Tech Nova" className=' w-[12rem] sm:w-[14rem] xl:w-[15rem] cursor-pointer'/>
+      <img src={Logo} alt="Tech Nova" className=' w-[6.5rem] sm:w-[7.5rem] xl:w-[8rem] cursor-pointer'/>
       </div>
 
-      <ul className='hidden xl:flex gap-x-14 text-white'>
+      <ul className='hidden xl:flex gap-x-14 text-white pl-16'>
         {Links.map((link,index) => (
         <li><a href='/' className='font-semibold hover:text-blue-500'>{link}</a></li>
       ))}
       </ul>
       
-      <div className='flex items-center gap-x-14'>
+      <div className='flex items-center gap-x-10'>
         <button className='hidden xl:block border-2 border-white rounded-lg py-1.5 px-3 text-[#ffffff] font-medium text-base hover:bg-blue-500'>16th Anniversery</button>
        <div className='flex items-center gap-x-14 xl:gap-x-10'>
-        <IoSearch className=' hidden sm:block text-[1.7rem] text-white cursor-pointer'/>
-        <MdAccountCircle className='text-[2rem] text-white cursor-pointer'/>
         </div>
       </div>
 
