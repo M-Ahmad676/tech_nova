@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react'
-import { IoSearch } from "react-icons/io5";
-import { MdAccountCircle } from "react-icons/md"
 import { IoMenu } from "react-icons/io5"
 import Logo from "../assets/Tech Nova.png"
+import {Link, useLocation} from 'react-router-dom'
 
 export default function NavBar() {
 
   const [isScrolled, setIsScrolled] = useState(false)
   const [sideMenu ,setSideMenu] = useState(false)
 
-
+  const Location = useLocation()
+  
   const handleSideMenu = () => {
        
     setSideMenu(!sideMenu)
@@ -36,7 +36,26 @@ export default function NavBar() {
   
 
   const Links = [
-    'Home','Services','Portfolio','Updates','Software','Contact'
+    {
+      PageName:'Home',
+      Path: '/'
+    },
+    {
+      PageName:'Services',
+      Path: '/Services'
+    },
+    {
+      PageName:'Portfolio',
+      Path: '/Portfolio'
+    },
+    {
+      PageName:'About Us',
+      Path: '/About'
+    },
+    {
+      PageName:'Contact',
+      Path: '/ContactUs'
+    },
   ]
 
   return (
@@ -47,7 +66,7 @@ export default function NavBar() {
       <div className={`absolute bg-[#171717] min-h-screen w-[15rem] md:w-[19rem] h-full top-16 left-0 transition-all duration-300 ${sideMenu ? 'translate-x-0' : '-translate-x-full'}`}>
       <ul className='py-10 text-white text-[1.1rem]'>
         {Links.map((link,index) => (
-        <li className='px-4 py-5 hover:bg-black hover:text-blue-400 sm:px-8' key={index}><a href='/' className='font-medium'>{link}</a></li>
+        <li className={`px-4 py-5 hover:bg-black hover:text-blue-400 sm:px-8 ${Location.pathname === link.PageName ? 'text-blue-400' : ''}`} key={index}><Link to={link.Path} className='font-medium'>{link.PageName}</Link></li>
       ))}
       </ul>
       </div>  
@@ -59,7 +78,7 @@ export default function NavBar() {
 
       <ul className='hidden xl:flex gap-x-14 text-white pl-16'>
         {Links.map((link,index) => (
-        <li><a href='/' className='font-semibold hover:text-blue-500'>{link}</a></li>
+        <li key={index}><Link to={link.Path} className={`font-semibold hover:text-blue-400 ${Location.pathname === link.Path ?'text-blue-400':''}`}>{link.PageName}</Link></li>
       ))}
       </ul>
       
