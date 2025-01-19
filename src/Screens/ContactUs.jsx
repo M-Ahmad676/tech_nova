@@ -22,7 +22,7 @@ const contact_data = [
   {
     icon:<FaLocationDot/>,
     heading:'Visit our Office',
-    contactVia: 'Office 123,Main Street Plaza,DownTown City,Country'
+    contactVia: 'Office 123,Main Street Plaza,DownTown City'
   },
 
 ]
@@ -33,26 +33,26 @@ export default function ContactUs() {
        <InfoBar/>
         <NavBar/>
        
-    <div className='h-[130vh] mt-24 flex flex-col justify-center'>
+    <div className='h-[130vh] mt-24 flex flex-col justify-center max-w-screen-2xl mx-auto'>
 
 {/* Contact Details */}
 
-    <div className='pb-28'>
+    <div className='pb-28 px-3'>
       <div className='pb-10 text-center'>
-        <h1 className='text-[2.5rem] text-blue-500 font-bold'>Contact Us</h1>
+        <h1 className='text-[2rem] sm:text-[2.5rem] text-blue-500 font-bold '>Contact Us</h1>
         <div className='w-[14rem] border-b-[4px] border-blue-400 m-auto mb-5 rounded-xl'></div>
-        <h3 className='text-gray-500 font-medium'>If You Have Any Query, Feel Free To Contact Us</h3>
+        <h3 className='text-gray-500 font-medium text-sm sm:text-base'>If You Have Any Query, Feel Free To Contact Us</h3>
       </div>
-    <div className=' flex justify-evenly w-full flex-wrap'>
+    <div className=' flex justify-evenly w-full flex-wrap gap-y-8 md:gap-y-0 '>
       {contact_data.map((data,index) => (
-        <div key={index} className='flex gap-x-3 items-center max-w-[22rem] w-full h-auto'>
+        <div key={index} className='flex gap-x-3 items-center max-w-[30rem] min-[729px]:max-w-[22rem] w-full h-auto shadow-md px-5 py-3 shadow-gray-300 rounded-lg'>
           
-          <div className='w-[4rem] h-[4rem] bg-blue-500 text-[1.5rem] text-white rounded-full flex items-center justify-center flex-wrap'>
+          <div className='w-[3rem] h-[3rem] sm:w-[4rem] sm:h-[4rem] bg-blue-500 text-[1.2rem] sm:text-[1.5rem] text-white rounded-full flex items-center justify-center flex-wrap'>
            {data.icon}
           </div>
           <div className='flex-1'>
-            <h4 className='text-[1.2rem] text-gray-400 font-medium'>{data.heading}</h4>
-            <p className='text-blue-500 font-bold text-[1.1rem] break-words'>{data.contactVia}</p>
+            <h4 className='text-base sm:text-base text-gray-400 font-medium'>{data.heading}</h4>
+            <p className='text-blue-500 font-bold text-sm sm:text-[1.1rem] break-words'>{data.contactVia}</p>
           </div>
 
         </div>
@@ -62,13 +62,13 @@ export default function ContactUs() {
 
 
    {/* Contact Form */}
-
-        <div className='flex justify-evenly items-center max-w-screen-2xl'>
-            <form  className='border-[1.5px] border-gray-300 max-w-[40rem] w-[30rem] rounded-xl p-10 space-y-10'>
+         
+        <div className='flex justify-evenly items-center pb-10'>
+            <form  className='border-[1.5px] border-gray-300 max-w-[40rem] w-[30rem] rounded-xl p-5 sm:p-10 space-y-10 mx-5'>
               
-              <div className='w-full space-y-1'>
+              <div className='w-full space-y-1 text-center sm:text-start'>
               <h2 className='text-[1.4rem] font-medium text-gray-500'>Get in Touch with Us</h2>
-              <div className='w-[14rem] border-b-2 border-blue-400'></div>
+              <div className='w-[14rem] border-b-2 border-blue-400 m-auto sm:m-0'></div>
               </div>
               
               <input type="text" name="Name" className='border-b-[1px] border-gray-400 w-full px-1 py-2 focus:outline-none' placeholder='Name'/>
@@ -84,8 +84,8 @@ export default function ContactUs() {
               </div>
             </form>
 
-          <div>
-            <img src="/Service icons/ContactUs.jpg" alt="ContactUs" className='max-w-[40rem]'/>
+          <div className='hidden min-[1124px]:block'>
+            <img src="/Service icons/ContactUs.jpg" alt="ContactUs" className='max-w-[40rem] w-full'/>
           </div>
 
 

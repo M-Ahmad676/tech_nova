@@ -72,8 +72,8 @@ export default function NavBar() {
       </div>  
 
 
-      <div className='pl-5 sm:pl-20 xl:pl-0'>
-      <img src={Logo} alt="Tech Nova" className=' w-[6.5rem] sm:w-[7.5rem] xl:w-[8rem] cursor-pointer'/>
+      <div>
+      <img src={Logo} alt="Tech Nova" className=' w-[6.5rem] sm:w-[7.5rem] md:w-[8rem] cursor-pointer'/>
       </div>
 
       <ul className='hidden xl:flex gap-x-14 text-white pl-16'>
