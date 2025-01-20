@@ -61,7 +61,7 @@ export default function NavBar() {
   return (
     <div className={`flex justify-between px-4 sm:px-16 xl:px-0 xl:justify-evenly items-center gap-x-10 h-16 bg-black fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'top-0' : 'top-0 lg:top-[3.5rem]'}`}>
 
-      <IoMenu className='text-white text-[2rem] block xl:hidden cursor-pointer hover:text-cyan-400' onClick={handleSideMenu}/> 
+      <IoMenu className='text-white text-[2rem] block xl:hidden cursor-pointer hover:text-blue-400' onClick={handleSideMenu}/> 
 
       <div className={`absolute bg-[#171717] min-h-screen w-[15rem] md:w-[19rem] h-full top-16 left-0 transition-all duration-300 ${sideMenu ? 'translate-x-0' : '-translate-x-full'}`}>
       <ul className='py-10 text-white text-[1.1rem]'>
