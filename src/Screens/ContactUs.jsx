@@ -61,8 +61,8 @@ export default function ContactUs() {
         </div> */}
    <div className='text-center lg:text-start px-[9rem]'> 
      <div className='flex items-center gap-x-3 gap-y-2 flex-col-reverse lg:flex-row justify-center lg:justify-normal '>
-     <div className='h-[2.5px] bg-blue-400 w-[5rem] rounded-md'></div>
-     <h4 className='text-blue-400 text-[1.4rem] font-medium'>Contact Us</h4>
+     <div className='h-[2.5px] bg-blue-500 w-[5rem] rounded-md'></div>
+     <h4 className='text-blue-500 text-[1.4rem] font-medium'>Contact Us</h4>
     </div>     
     <h1 className='text-[2rem] sm:text-[2.5rem] font-medium'>Let's Get in Touch </h1>
   

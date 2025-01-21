@@ -4,6 +4,7 @@ import InfoBar from '../components/Info_bar'
 import Cover from '../components/Cover'
 import Footer from '../components/Footer'
 import BottomBar from '../components/Bottom_bar'
+import ServiceCards from '../components/ServiceCards'
 
 export default function Services() {
   return (
@@ -17,11 +18,16 @@ export default function Services() {
         image='/Service icons/Services.jpg'
         imageSize = 'max-w-[35rem]'
         />
-        <div className='h-[100vh] py-10 max-w-screen-2xl'>
+        <div className='min-h-screen py-10 max-w-screen-2xl mx-auto'>
           <div className='w-full text-center m-auto'>
-          <h1 className='text-[2.5rem] font-medium'>Our Services</h1>
+          <h1 className='text-[2.5rem] font-bold'>Our Services</h1>
           <div className='h-[2.5px] bg-blue-400 w-[16rem] rounded-md m-auto'></div>
           </div>
+
+        <div className='h-auto py-20 flex justify-center items-center px-5'> 
+        <ServiceCards/>
+        </div>
+
         </div>
         <Footer/>
         <BottomBar/>
