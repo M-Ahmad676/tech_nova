@@ -50,7 +50,7 @@ export default function NavBar() {
     },
     {
       PageName:'About Us',
-      Path: '/About'
+      Path: '/AboutUs'
     },
     {
       PageName:'Contact',

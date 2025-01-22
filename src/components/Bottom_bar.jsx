@@ -14,11 +14,11 @@ export default function Bottom_bar() {
       ]
 
   return (
-    <div className='bg-black text-gray-400 text-sm flex justify-evenly xl:justify-between flex-col-reverse xl:flex-row px-5 md:px-20 items-center h-[4rem] sm:h-[8rem]'>
+    <div className='bg-black text-gray-400 text-sm flex justify-evenly xl:justify-between flex-col-reverse xl:flex-row px-5 md:px-20 items-center h-[4rem] sm:h-[6rem]'>
 
         <p className='text-sm'>2024 © CopyRights Tech Nova Software House</p>
 
-        <ul className='hidden sm:flex gap-x-10 text-sm '>
+        <ul className='hidden sm:flex gap-x-10 text-sm pr-0 xl:pr-24'>
             <li><a href='/' className='hover:text-blue-500'>Career</a></li>
             <li><a href='/' className='hover:text-blue-500'>Services</a></li>
             <li><a href='/' className='hover:text-blue-500'>Terms & Conditions</a></li>
