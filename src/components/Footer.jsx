@@ -56,7 +56,7 @@ export default function Footer() {
         <h4 className="text-white text-[1.2rem] sm:text-[1.5rem] font-bold pb-8">
           RECENT POSTS
         </h4>
-        <div className="w-full space-y-10 ">
+        <div className="w-full space-y-5 sm:space-y-10 ">
           {posts.map((post, index) => (
             <div key={index} className="group">
               <div className="flex items-center gap-x-7">
@@ -82,17 +82,22 @@ export default function Footer() {
       </div>
 
       <div className="max-w-[25rem] text-sm m-auto xl:m-0 h-full w-full">
-        <h4 className="text-white  text-[1.2rem] sm:text-[1.5rem] font-bold pb-8">CONTACTS</h4>
+        <div>
+        <h4 className="text-white  text-[1.2rem] sm:text-[1.5rem] font-bold pb-8">ADDRESS</h4>
         <ul className="space-y-2">
         {contacts.map((office,index) => (
           <li key={index} className="text-gray-400"><span className="font-bold text-white">{office.branch}:</span> {office.address}</li>
         ))}
         </ul>
-       
-       <ul className="pt-10 text-gray-400 space-y-2">
+        </div>
+      
+      <div className="pt-10">
+      <h4 className="text-white  text-[1.2rem] sm:text-[1.5rem] font-bold pb-5">Contact</h4>
+       <ul className=" text-gray-400 space-y-2">
         <li>Ph: +92 51 5491184 / +92 51 8772888</li>
         <li>Email : info@technova.com</li>
        </ul>
+       </div>
       </div>
       </div>
     </div>

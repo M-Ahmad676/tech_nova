@@ -11,6 +11,7 @@ export default function Services() {
     <div>
         <InfoBar/>
         <NavBar/>
+        <div className='mt-40 sm:mt-10'>
         <Cover 
         title="Innovative Solutions, Tailored for You" 
         subheading="Your Vision, Our Expertise"
@@ -18,9 +19,10 @@ export default function Services() {
         image='/Service icons/Services.jpg'
         imageSize = 'max-w-[35rem]'
         />
+        </div>
         <div className='min-h-screen py-10 max-w-screen-2xl mx-auto'>
           <div className='w-full text-center m-auto'>
-          <h1 className='text-[2.5rem] font-bold'>Our Services</h1>
+          <h1 className='text-[2.1rem] sm:text-[2.5rem] text-blue-500 font-bold'>Our Services</h1>
           <div className='h-[2.5px] bg-blue-400 w-[16rem] rounded-md m-auto'></div>
           </div>
 

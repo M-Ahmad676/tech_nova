@@ -83,7 +83,7 @@ export default function NavBar() {
       </ul>
       
       <div className='flex items-center gap-x-10'>
-        <button className='hidden xl:block border-2 border-white rounded-lg py-1.5 px-3 text-[#ffffff] font-medium text-base hover:bg-blue-500'>16th Anniversery</button>
+        <button className='hidden xl:block border-2 border-white rounded-lg py-1.5 px-3 text-[#ffffff] font-medium text-base hover:bg-blue-500'>Get a Quote</button>
        <div className='flex items-center gap-x-14 xl:gap-x-10'>
         </div>
       </div>
