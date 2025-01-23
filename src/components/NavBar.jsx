@@ -1,7 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import { IoMenu } from "react-icons/io5"
-import Logo from "../assets/Tech Nova.png"
+import Logo from "../assets/tech-nova.png"
 import {Link, useLocation} from 'react-router-dom'
+import { IoHome } from "react-icons/io5";
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { AiOutlineProject } from "react-icons/ai";
+import { PiUsersThreeFill } from "react-icons/pi";
+import { SiMinutemailer } from "react-icons/si";
+
 
 export default function NavBar() {
 
@@ -38,42 +44,50 @@ export default function NavBar() {
   const Links = [
     {
       PageName:'Home',
-      Path: '/'
+      Path: '/',
+      icon: <IoHome/>
     },
     {
       PageName:'Services',
-      Path: '/Services'
+      Path: '/Services',
+      icon: <MdOutlineMiscellaneousServices/>
     },
     {
       PageName:'Portfolio',
-      Path: '/Portfolio'
+      Path: '/Portfolio',
+      icon: <AiOutlineProject/>
     },
     {
       PageName:'About Us',
-      Path: '/AboutUs'
+      Path: '/AboutUs',
+      icon: <PiUsersThreeFill/>
     },
     {
       PageName:'Contact',
-      Path: '/ContactUs'
+      Path: '/ContactUs',
+      icon: <SiMinutemailer/>
     },
   ]
 
   return (
     <div className={`flex justify-between px-4 sm:px-16 xl:px-0 xl:justify-evenly items-center gap-x-10 h-16 bg-black fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'top-0' : 'top-0 lg:top-[3.5rem]'}`}>
 
-      <IoMenu className='text-white text-[2rem] block xl:hidden cursor-pointer hover:text-blue-400' onClick={handleSideMenu}/> 
+      <IoMenu className='text-white text-[1.7rem] sm:text-[2rem] block xl:hidden cursor-pointer hover:text-blue-400' onClick={handleSideMenu}/> 
 
       <div className={`absolute bg-[#171717] min-h-screen w-[15rem] md:w-[19rem] h-full top-16 left-0 transition-all duration-300 ${sideMenu ? 'translate-x-0' : '-translate-x-full'}`}>
-      <ul className='py-10 text-white text-[1.1rem]'>
+      <ul className='py-10 text-white text-[0.9rem] sm:text-[1.1rem]'>
         {Links.map((link,index) => (
-        <li className={`px-4 py-5 hover:bg-black hover:text-blue-400 sm:px-8 ${Location.pathname === link.PageName ? 'text-blue-400' : ''}`} key={index}><Link to={link.Path} className='font-medium'>{link.PageName}</Link></li>
+        <Link to={link.Path} key={index} className={`px-4 py-5 sm:px-8 flex items-center gap-x-5 hover:bg-black ${Location.pathname === link.PageName ? 'bg-black ' : ''}`}>
+        <span className='text-[1.2rem]'>{link.icon}</span>
+        <span className='font-medium'>{link.PageName}</span>
+        </Link>
       ))}
       </ul>
       </div>  
 
 
       <div>
-      <img src={Logo} alt="Tech Nova" className=' w-[6.5rem] sm:w-[7.5rem] md:w-[8rem] cursor-pointer'/>
+      <img src={Logo} alt="Tech Nova" className=' w-[7.5rem] md:w-[10rem] cursor-pointer'/>
       </div>
 
       <ul className='hidden xl:flex gap-x-14 text-white pl-16'>

@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillCalendarEventFill } from "react-icons/bs";
-import Logo from "../assets/Tech Nova.png"
+import Logo from "../assets/tech-nova.png"
 
 export default function Footer() {
   const posts = [
@@ -45,7 +45,7 @@ export default function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-9 xl:flex w-full justify-evenly px-5 gap-y-12">
       <div className="max-w-[25rem] m-auto xl:m-0 w-full space-y-4">
         <h4 className="text-white text-[1.2rem] sm:text-[1.5rem] font-bold">ABOUT</h4>
-        <img src={Logo} alt="tech Nova" className="w-[8rem]" />
+        <img src={Logo} alt="tech Nova" className="w-[9rem]" />
         <p className="text-gray-300 text-sm leading-6">
           Tech House Having 100+ Quality Products and Innovations at national
           and international markets. Rated as Best Software House in Region
