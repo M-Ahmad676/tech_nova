@@ -70,13 +70,15 @@ export default function Service() {
 
         </div>
 
+
         <div className='hidden lg:block'>  {/* Mobile Frame */}
         
         <img src={Phone_Mockup} alt="phone" className='max-w-[15rem]' />
 
         </div>
 
-        <div className='flex px-2 min-[500px]:px-0 flex-col gap-y-10 md:gap-y-0 justify-evenly items-center  h-full w-full'> {/* Right Services */}
+
+        <div className='flex px-2 min-[500px]:px-0 flex-col pt-10 md:pt-0 gap-y-10 md:gap-y-0 justify-evenly items-center  h-full w-full'> {/* Right Services */}
 
         {serviceRight.map((service, index) => (
             

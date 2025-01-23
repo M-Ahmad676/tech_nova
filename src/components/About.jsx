@@ -12,7 +12,7 @@ export default function About() {
   return (
     <>
     <div 
-    className='flex items-center h-[90vh] bg-responsive-left'
+    className='flex items-center h-auto sm:h-[90vh] bg-responsive-left'
      style={{
         backgroundImage:`url(${background})`,
         backgroundSize: 'cover',  
@@ -20,7 +20,7 @@ export default function About() {
         opacity: '0.9',
     }}
     >
-      <div className=' flex flex-wrap justify-around items-center max-w-screen-2xl w-full h-full m-auto'>
+      <div className=' flex flex-wrap justify-around items-center max-w-screen-2xl w-full gap-y-12 h-full m-auto'>
       <div
        ref={textContentRef}
        className='px-5'

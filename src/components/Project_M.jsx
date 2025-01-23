@@ -14,7 +14,7 @@ export default function Project_M() {
     ]
 
   return (
-    <div className='h-auto my-20 gap-y-10 lg:h-[70vh] flex flex-wrap-reverse gap-x-10 justify-around items-center px-10 sm:px-16 max-w-screen-2xl w-full m-auto'>
+    <div className='h-auto my-20 gap-y-10 lg:h-[70vh] flex flex-wrap-reverse gap-x-10 justify-around items-center  px-4 sm:px-16 max-w-screen-2xl w-full m-auto'>
 
         <div>
            <img src={MacFrame} alt="appleFrame" className='w-[17rem] min-[500px]:w-[22rem] md:w-[28rem]' />

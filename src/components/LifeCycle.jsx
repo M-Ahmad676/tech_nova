@@ -10,7 +10,7 @@ export default function LifeCycle() {
 
   return (
     <div className='flex h-auto py-16 gap-y-5 lg:gap-y-0 lg:py-0 lg:h-[70vh] justify-around flex-wrap items-center'>
-        <div ref={screenRef} className='px-12 sm:px-0'>
+        <div ref={screenRef} className='px-4 sm:px-0'>
             <h3 className='text-[1.6rem] min-[500px]:text-[2rem] font-semibold'>Software Development Life Cycle</h3>
             <p className='text-gray-600 text-sm min-[500px]:text-base'>We use Agile / Scrum Methodology</p>
 

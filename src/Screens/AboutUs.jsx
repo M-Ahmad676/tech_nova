@@ -10,7 +10,7 @@ export default function AboutUs() {
       <TopInfo_Bar />
       <Navbar />
       <div className="max-w-screen-2xl my-10 mx-auto">
-        <div className="flex justify-around items-center flex-col h-auto py-20 lg:flex-row lg:h-[100vh] px-2 sm:px-20">
+        <div className="flex justify-around items-center flex-col h-auto py-20 lg:flex-row lg:h-[100vh] px-4 sm:px-20">
           <div className="lg:max-w-[50%] w-full">
             <div className="flex items-start sm:items-center gap-x-3 gap-y-2 flex-col-reverse lg:flex-row justify-center lg:justify-normal ">
               <div className="h-[2.5px] bg-blue-500 w-[5rem] rounded-md"></div>
