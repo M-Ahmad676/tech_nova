@@ -22,7 +22,7 @@ export default function Services() {
         </div>
         <div className='min-h-screen py-10 max-w-screen-2xl mx-auto'>
           <div className='w-full text-center m-auto'>
-          <h1 className='text-[2.1rem] sm:text-[2.5rem] text-blue-500 font-bold'>Our Services</h1>
+          <h1 className='text-[2.1rem] sm:text-[2.5rem] font-bold bg-custom-gradient2 bg-clip-text text-transparent'>Our Services</h1>
           <div className='h-[4px] bg-blue-400 w-[16rem] rounded-md m-auto'></div>
           </div>
 

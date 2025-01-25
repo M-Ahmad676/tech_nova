@@ -53,7 +53,7 @@ export default function ServiceCards() {
                <img src={card.image} alt={card.title} className='object-cover w-full h-full rounded-tl-[80px]' />
             </div>
 
-            <div className='h-[10rem] p-4 rounded-br-[80px] space-y-2 bg-blue-500  overflow-hidden'>
+            <div className='h-[10rem] p-4 rounded-br-[80px] space-y-2 bg-custom-gradient2  overflow-hidden'>
                 <h3 className='text-[1.2rem] font-medium text-white'>{card.title}</h3>
                 <p className='text-white'>{card.description}</p>
             </div>

@@ -14,11 +14,11 @@ export default function AboutUs() {
           <div className="lg:max-w-[50%] w-full">
             <div className="flex items-start sm:items-center gap-x-3 gap-y-2 flex-col-reverse lg:flex-row justify-center lg:justify-normal ">
               <div className="h-[2.5px] bg-blue-500 w-[5rem] rounded-md"></div>
-              <h1 className="text-blue-500 text-[2rem] sm:text-[2.2rem] font-semibold">
+              <h1 className="text-[2rem] sm:text-[2.5rem] font-bold bg-custom-gradient2 bg-clip-text text-transparent">
                 About Us
               </h1>
             </div>
-            <p className="py-5 leading-8">
+            <p className="py-5 leading-8 text-gray-700">
               Welcome to **Tech Nova**, where innovation meets excellence in
               software development. We are a cutting-edge software house
               dedicated to crafting modern, scalable, and efficient digital
