@@ -11,7 +11,7 @@ export default function Services() {
     <div>
         <InfoBar/>
         <NavBar/>
-        <div className='mt-36 sm:mt-10'>
+        <div className='mt-36 sm:mt-10 overflow-hidden'>
         <Cover 
         title="Innovative Solutions, Tailored for You" 
         subheading="Your Vision, Our Expertise"

@@ -14,7 +14,7 @@ import CoverImage from '../assets/cover.jpg'
 
 export default function LandingPage() {
   return (
-    <>
+    <div className='overflow-hidden'>
     <Info_bar/>
     <Navbar/>
      <Cover
@@ -32,6 +32,6 @@ export default function LandingPage() {
      <OurClientSection/>
      <Footer/>
      <BottomBar/>
-    </>
+    </div>
   )
 }
