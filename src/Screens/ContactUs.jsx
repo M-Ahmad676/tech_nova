@@ -1,8 +1,4 @@
 import React from 'react'
-import InfoBar from '../components/Info_bar'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
-import Bottom_bar from '../components/Bottom_bar'
 import { IoMail } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -30,9 +26,6 @@ const contact_data = [
 export default function ContactUs() {
   return (
     <div>
-       <InfoBar/>
-        <NavBar/>
-       
     <div className='h-[110vh] mt-24 flex flex-col justify-center gap-y-10 max-w-screen-2xl mx-auto'>
 
 {/* Contact Details */}
@@ -93,10 +86,7 @@ export default function ContactUs() {
 
 
         </div>
-        </div>
-        <Footer/>
-        <Bottom_bar/>
-      
+        </div>      
     </div>
   )
 }

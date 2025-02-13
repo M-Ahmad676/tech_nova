@@ -1,4 +1,6 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function ProjectCards() {
 
@@ -39,13 +41,12 @@ export default function ProjectCards() {
     <div key={index} className='min-[950px]:max-w-[40rem] w-full'>
 
        <div className='shadow-md shadow-gray-400 rounded-xl transition-all duration-300 ease-in-out hover:scale-[1.02]'>
-        <img src={project.thumbnail} alt={project.title} className='object-cover w-full h-full rounded-xl ' />
+        <LazyLoadImage src={project.thumbnail} alt={project.title} className='object-cover w-full h-full rounded-xl' effect='blur' />
        </div>
        <div className='py-7 space-y-2 h-auto min-[550px]:h-[15rem]'>
           <h1 className='text-[1.5rem] sm:text-[1.7rem] font-bold'>{project.title}</h1>
           <p className='text-gray-600'>{project.description}</p>
        </div> 
-
     </div>
     ))}
     </div>

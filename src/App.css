@@ -64,3 +64,7 @@ body::-webkit-scrollbar-thumb {
   }
 
 }
+
+.lazy-load-image-background {
+  display: block !important;
+}

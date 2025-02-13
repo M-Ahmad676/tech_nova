@@ -1,15 +1,9 @@
 import React from 'react'
-import TopInfo_Bar from '../components/Info_bar'
-import Navbar from '../components/NavBar'
 import ProjectCards from '../components/ProjectCards'
-import Footer from '../components/Footer'
-import BottomBar from '../components/Bottom_bar'
 
 export default function Portfolio() {
   return (
     <>
-     <TopInfo_Bar/>
-     <Navbar/> 
      <div className='max-w-screen-2xl mx-auto mt-44 mb-10 '>
       <div className='px-4 sm:px-10'>  
       <div className='max-w-[40rem] w-full pb-20 px-0 min-[1490px]:px-8 space-y-4'> 
@@ -22,9 +16,6 @@ export default function Portfolio() {
       <ProjectCards/>
       </div>
      </div>
-     <Footer/>
-     <BottomBar/>
-
     </>
   )
 }

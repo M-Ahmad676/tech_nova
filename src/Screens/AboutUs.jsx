@@ -1,14 +1,8 @@
 import React from "react";
-import TopInfo_Bar from "../components/Info_bar";
-import Navbar from "../components/NavBar";
-import Footer from "../components/Footer";
-import BottomBar from "../components/Bottom_bar";
 
 export default function AboutUs() {
   return (
     <>
-      <TopInfo_Bar />
-      <Navbar />
       <div className="max-w-screen-2xl my-10 mx-auto">
         <div className="flex justify-around items-center flex-col h-auto py-20 lg:flex-row lg:h-[100vh] px-4 sm:px-20">
           <div className="lg:max-w-[50%] w-full">
@@ -48,8 +42,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <Footer />
-      <BottomBar />
     </>
   );
 }

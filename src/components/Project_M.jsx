@@ -1,5 +1,5 @@
 import React from 'react'
-import MacFrame from '../assets/Mac_frame.png'
+import MockUps from '../assets/image.jpg'
 
 export default function Project_M() {
      
@@ -14,13 +14,13 @@ export default function Project_M() {
     ]
 
   return (
-    <div className='h-auto my-20 gap-y-10 lg:h-[70vh] flex flex-wrap-reverse gap-x-10 justify-around items-center  px-4 sm:px-16 max-w-screen-2xl w-full m-auto'>
+    <div className='h-auto my-20 gap-y-10 grid grid-cols-1 lg:grid-cols-[1fr_1fr] justify-items-center gap-x-10  px-4 sm:px-16 max-w-screen-2xl w-full m-auto'>
 
-        <div>
-           <img src={MacFrame} alt="appleFrame" className='w-[17rem] min-[500px]:w-[22rem] md:w-[28rem]' />
+        <div className='w-full max-w-xl'>
+           <img src={MockUps} alt="appleFrame" className='w-full object-contain h-auto' />
         </div>
 
-        <div className='space-y-5'>
+        <div className='max-w-full space-y-5'>
 
             <h2 className='text-[1.7rem] font-semibold'>OUR PROJECT MANAGEMENT</h2>
 
